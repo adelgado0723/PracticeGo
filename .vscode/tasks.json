@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build sqrt",
+            "type": "shell",
+            "command": "go build -o sqrt\\sqrt.exe -ldflags=-w ${workspaceRoot}\\sqrt\\main.go"
+        },
+        {
+            "label": "build test",
+            "type": "shell",
+            "command": "go build -o test\\test.exe -ldflags=-w ${workspaceRoot}\\test\\main.go"
+        },
+        {
+            "label": "build slices",
+            "type": "shell",
+            "command": "go build -o slices\\slices.exe -ldflags=-w ${workspaceRoot}\\slices\\slices.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build readers",
+            "type": "shell",
+            "command": "go build -o readers\\readers.exe -ldflags=-w ${workspaceRoot}\\readers\\readers.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build images",
+            "type": "shell",
+            "command": "go build -o images\\images.exe -ldflags=-w ${workspaceRoot}\\images\\images.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
