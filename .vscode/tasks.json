@@ -42,6 +42,36 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "build goroutines",
+            "type": "shell",
+            "command": "go build -o goroutines\\goroutines.exe -ldflags=-w ${workspaceRoot}\\goroutines\\goroutines.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build tree",
+            "type": "shell",
+            "command": "go build -o tree\\tree.exe -ldflags=-w ${workspaceRoot}\\tree\\tree.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build webcrawler",
+            "type": "shell",
+            "command": "go build -o webcrawler\\webcrawler.exe -ldflags=-w ${workspaceRoot}\\webcrawler\\webcrawler.go",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
