@@ -18,7 +18,7 @@ func main() {
 			// fmt.Println(quote.Hello())
 			// fmt.Println(quote.Opt())
 			// fmt.Println(quote.Glass())
-			fmt.Println(greetings.Hello(name))
+			fmt.Println(greetings.Hello(""))
 		}
 	} else {
 
