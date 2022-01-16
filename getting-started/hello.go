@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"rsc.io/quote"
+	"github.com/adelgado0723/PracticeGo/greetings"
 )
 
 func main() {
@@ -14,10 +14,11 @@ func main() {
 
 		for i := 0; i < 2; i++ {
 
-			fmt.Println(quote.Go())
-			fmt.Println(quote.Hello())
-			fmt.Println(quote.Opt())
-			fmt.Println(quote.Glass())
+			// fmt.Println(quote.Go())
+			// fmt.Println(quote.Hello())
+			// fmt.Println(quote.Opt())
+			// fmt.Println(quote.Glass())
+			fmt.Println(greetings.Hello(name))
 		}
 	} else {
 
